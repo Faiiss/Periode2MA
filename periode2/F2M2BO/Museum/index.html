@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rijksmusuem landing page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="Rijksmuseum">Rijksmuseum</a>
+        <ul>
+            <li><a href="#" class="active">Giftshop</a></li>
+            <li><a href="#">Tickets</a></li>
+            <li><a href="#">Geschiedenis</a></li>
+            <li><a href="#">Inloggen</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/Pilars.png" id="Pilars">
+        <img src="img/Wall.png" id="Wall">
+        <a href="#" class="btn">Onderzoek</a>
+        <img src="img/DeNachtwacht.png" id="DeNachtwacht">
+    </section>
+    <div class="sec">
+        <h2>De Nachtwacht</h2>
+        <p>De compagnie van kapitein Frans Banninck Cocq en luitenant Willem van Ruytenburgh maakt zich gereed om uit te marcheren, beter bekend als De Nachtwacht, 
+            ook Nachtwacht (Frans: La Ronde de nuit; Engels: Night Watch), is een schuttersstuk van de Hollandse kunstschilder Rembrandt van Rijn (1606-1669), 
+            dat in 1642 gereed kwam. Het schilderij is eigendom van de gemeente Amsterdam en behoort sinds 1808 tot de collectie van het Rijksmuseum Amsterdam.
+             Het doek toont de twee schutters uit de titel, vergezeld door andere militieleden, alsmede enkele figuranten, 
+            terwijl ze zich aan het opstellen zijn. De Nachtwacht is een van de beroemdste schilderijen ter wereld. <br><br>Het schilderij was Rembrandts bijdrage aan een project van zeven werken, 
+            zes schuttersstukken en een portret van de doelheren van de kloveniersschutters, besteld door het Amsterdamse schuttersgilde voor de grote feestzaal van de Kloveniersdoelen. 
+            Het is Rembrandts eerste en enige schuttersstuk. Vergeleken met andere doeken uit het genre is Rembrandts werk een levendige en gedurfde compositie, 
+            waarin de schutterij niet in de gebruikelijke statische opstelling poseert, maar is afgebeeld tijdens het groeperen. 
+            Het doek is een rijk werk van een barokke complexiteit, waarin realisme en symboliek vakkundig zijn gecombineerd in een meesterlijke integratie van beweging, licht en kleur,
+             in harmonie gebracht door een fijnzinnig patroon van clair-obscur. 
+            In deze aspect en vertegenwoordigt De Nachtwacht het hoogtepunt van Rembrandts schilderkunst.  </p>
+        <p></p>
+    </div>
+    
+    <script>
+        let Pilars = document.getElementById('Pilars');
+        let Wall = document.getElementById('Wall');
+        let DeNachtwacht = document.getElementById('DeNachtwacht');
+
+        window.addEventListener('scroll', function(){
+            let value =  window.scrollY;
+            Pilars.style.left = value * 0.25 + 'px';
+            Wall.style.top = value * 1.05 + 'px';
+            DeNachtwacht.style.top = value * 1.15 + 'px';
+        })
+    </script>
+</body>
+</html>
