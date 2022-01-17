@@ -8,7 +8,7 @@
     <header>
         <a href="#" class="Rijksmuseum">Rijksmuseum</a>
         <ul>
-            <li><a href="#" class="active">Giftshop</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Tickets</a></li>
             <li><a href="#">Geschiedenis</a></li>
             <li><a href="#">Inloggen</a></li>
@@ -34,8 +34,9 @@
              in harmonie gebracht door een fijnzinnig patroon van clair-obscur. 
             In deze aspect en vertegenwoordigt De Nachtwacht het hoogtepunt van Rembrandts schilderkunst.  </p>
         <p></p>
+        <br><br>
+        </div>
     </div>
-    
     <script>
         let Pilars = document.getElementById('Pilars');
         let Wall = document.getElementById('Wall');
@@ -44,9 +45,13 @@
         window.addEventListener('scroll', function(){
             let value =  window.scrollY;
             Pilars.style.top = value * 0.05 + 'px';
-            Wall.style.top = value * 0.09 + 'px';
-            DeNachtwacht.style.top = value * 0.15 + 'px';
+            Wall.style.top = value * 0.11 + 'px';
+            DeNachtwacht.style.top = value * 0.18 + 'px';
         })
     </script>
+    <div class="slider">
+        
+
+    </div>
 </body>
 </html>
