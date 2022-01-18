@@ -56,7 +56,61 @@
     </script>
 
     <h2 class="stext">Tentoonstellingen</h2>
+    <style type="text/css">
+    #slider{
+        overflow: hidden;
+    }
+    #slider figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+    }
+    #slider figure img{
+        float: left;
+        width: 20%;
+    }
+    @keyframes slider{ 
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        } 
+        75%{
+            left: -300%;
+        }
+        80%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    
+    }
+
+    </style>
     <div id="slider">
+        <figure>
+            <img src="img/foto1.png" alt="">
+            <img src="img/foto2.png" alt="">
+            <img src="img/foto3.png" alt="">
+            <img src="img/foto4.png" alt="">
+            <img src="img/foto5.jpg" alt="">
+        </figure>
         
     </div>
 

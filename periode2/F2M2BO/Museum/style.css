@@ -71,7 +71,7 @@ section
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 1px 1px 10px black;
+    text-shadow: 3px 3px 10px black;
 }
 section::before
 {
@@ -85,6 +85,17 @@ section::before
 }
 #iNachtwacht{
     background: url(img/DeNachtwachtpainting.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+#Geschiedenis{
+    background: url(img/foto8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
 }
 section img
 {
@@ -154,8 +165,7 @@ section img#DeNachtwacht
     font-size: 3.5em;
     text-align: center;
     position: relative;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 80px;
     color: #fff;
     text-shadow: 1px 1px 10px black;
 }
@@ -164,8 +174,12 @@ section img#DeNachtwacht
     font-size: 1em;
     text-align: center;
     color: #fff;
-
 }
 @media only screen and (max-width:700px){
 
+}
+
+#slider{
+    margin-top: 30px;
+    margin-bottom: 10em;
 }
