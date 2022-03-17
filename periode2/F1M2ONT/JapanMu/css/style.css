@@ -6,7 +6,7 @@
 
 body{
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     animation-name: opening;
     animation-duration: 0.8s;
 }
@@ -14,12 +14,12 @@ body{
 .header{
     background: black;
     display: flex;
-    height: 120px;
+    height: 7.5rem;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 1.25rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .headerTitle{
@@ -91,7 +91,7 @@ body{
 }
 
 .mainNavListItem:first-of-type{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .bigFigure{
@@ -108,7 +108,7 @@ body{
 
 .collections{
    width: 100%;
-   padding: 40px;
+   padding: 2.5rem;
    
 }
 
@@ -117,20 +117,20 @@ body{
     color: black;
     text-transform: uppercase;
     font-weight: 400;
-    margin-bottom:40px ;
+    margin-bottom:2.5rem ;
 }
 
 .collectionsList{
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
     flex-wrap: wrap;
 }
 
 
 .collectionsListItem{
-    width: 500px;
-    height: 700px;
+    width: 31.25rem;
+    height: 43.75rem;
     background: black;
     flex-shrink: 1;
     flex-grow: 1;
@@ -144,30 +144,80 @@ body{
 }
 
 .info{
-    padding: 40px;
+    padding:2.5rem ;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 2.5rem;
     
 }
 
 .block{
-    width: 400px;
+    width: 25rem;
     flex-shrink: 0;
     flex-grow: 1;
 }
 
 
+form{
+    
+    width: 100vw;
+    min-height: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 4rem;
+    font-size: 3rem;
+    gap: 2rem;
+    border-radius: 5px;
+}
+
+form label{
+    border-bottom: 2px solid rgb(97, 97, 202);
+
+   
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input{
+    display: block;
+    width:30ch;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: 1px solid black;
+    background: #EEEEEE;
+}
+
+textarea{
+    height: 35ch;
+    width: 100%;
+    font-size: 1.6rem;
+    border: 1px solid black;
+    
+    padding: 1rem 2rem;
+    resize: none;
+    background: #EEEEEE;
+}
+
+.submit{
+    border-radius: 5px;
+    background-color: rgb(128, 125, 125);
+}
+
 .footer{
-    height: 120px;
+    height: 7.5rem;
     background: black;
     display: flex;
     color: white;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 1.25rem;
+    padding-left:2.5rem ;
+    padding-right: 2.5rem;
 }
 
 .footerNav{
@@ -190,7 +240,7 @@ body{
 
 @media screen and (max-width:700px) {
     body{
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     .headerTitle{
         font-size: 380%;
